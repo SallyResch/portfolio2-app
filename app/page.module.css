@@ -31,7 +31,14 @@
   font-weight: 700;
   font-family: var(--font-mono);
 }
-
+.contactLinks{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.contactLinks:hover{
+  cursor: pointer;
+}
 .profilePicture1{
   border-radius: 50%;
 }
