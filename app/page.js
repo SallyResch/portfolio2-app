@@ -9,14 +9,12 @@ export default function Home() {
         <h1>
           Welcome
         </h1>
-
         <Image
           className={styles.profilePicture1}
           src="/profilePicture.jpg"
           width={150}
           height={150}
         />
-
         <div className={styles.grid2}>
           <p>My name is Sally Resch and I live in Södertälje, Sweden. As for alot of other people, the pandemic brought new horizons  and I found programming.
             Since the autumn of 2021, I studied to become a Java Developer/Fullstack at Stockholms Technical Institute and have now reached my goal of graduation.
@@ -35,9 +33,14 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >LinkedIn</Link>
+              <Link
+                href="https://github.com/SallyResch"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Github</Link>
             </div>
           </p>
-          <div className={styles.card}>
+          <div className={styles.card2}>
             <h2>Qualifications</h2>
             <div className={`${styles.graphs} ${styles.first}`} ><h3>Java Backend</h3></div>
             <div className={`${styles.graphs} ${styles.second}`} ><h3>Next.js</h3></div>
@@ -47,7 +50,6 @@ export default function Home() {
             <div className={`${styles.graphs} ${styles.sixth}`} ><h3>CSS</h3></div>
           </div>
         </div>
-
       </div>
       <div className={styles.grid}>
         <Link
