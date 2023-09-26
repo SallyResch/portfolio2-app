@@ -37,6 +37,10 @@
   font-family: var(--font-mono);
 }
 
+.profilePicture1{
+  border-radius: 50%;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(25%, auto));
