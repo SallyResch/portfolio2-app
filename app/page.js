@@ -86,7 +86,9 @@ export default function Home() {
         </Link>
       </div>
       <div className={styles.center}>
-        Hello this is the center div
+        <div className={styles.warningTape}>
+          <h2>UNDER CONSTRUCTION</h2>
+        </div>
       </div>
     </main>
   )

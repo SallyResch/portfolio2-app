@@ -46,7 +46,7 @@
 }
 .grid2{
   display: grid;
-  grid-template-columns: repeat(3, minmax(25%, auto));
+  grid-template-columns: repeat(2, minmax(25%, auto));
   max-width: 100%;
 }
 .grid {
@@ -95,8 +95,16 @@
   align-items: center;
   position: relative;
   padding: 4rem 0;
+  color: rgb(152, 151, 151);
 }
-
+.warningTape {
+  position: relative;
+  background: linear-gradient(45deg, yellow 35%, black 25%, black 75%, yellow 75%, yellow),
+              linear-gradient(-45deg, yellow 25%, transparent 25%, transparent 75%, yellow 75%, yellow);
+  background-size: 40px 40px; 
+  height: 40px; 
+  width: 100%; 
+}
 .center::before {
   background: var(--secondary-glow);
   border-radius: 50%;
@@ -109,7 +117,7 @@
   background: var(--primary-glow);
   width: 240px;
   height: 180px;
-  z-index: -1;
+
 }
 
 .center::before,
@@ -139,7 +147,7 @@ position: absolute;
 left: 0;
 height: 25px;
 top: 0;
-z-index: -2;
+
 background: rgb(230, 201, 173);
 border-radius: 50px;
 }
@@ -155,7 +163,7 @@ animation: animate 1 4s;
 position: absolute;
 top: 0;
 left: 0;
-z-index: -1;
+
 border-radius: 50px;
 }
 .graphs.first::after{
