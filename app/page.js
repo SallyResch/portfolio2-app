@@ -1,13 +1,11 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import Navbar from '@/components/Navbar/Navbar'
-import Footer from '@/components/Footer/Footer'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Navbar />
-      {/*     <div className={styles.description}>
+      <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.js</code>
@@ -29,71 +27,51 @@ export default function Home() {
             />
           </a>
         </div>
+        <div className={styles.center}>
+          <Image
+            className={styles.logo}
+            src="/next.svg"
+            alt="Next.js Logo"
+            width={180}
+            height={37}
+            priority
+          />
+        </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
       <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+        <Link
+          href="https://reactproject-2noafu1o5-annaaste.vercel.app/"
           className={styles.card}
           target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          rel="noopener noreferrer">
+          <h2>Ingrii webapplication</h2>
+          <p>A next.js web application that finds replacement ingredients for you</p>
+        </Link>
+        <Link
+          href="https://reactmastery2-4w1154sqf-sallyresch27-gmailcom.vercel.app/"
           className={styles.card}
           target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          rel="noopener noreferrer">
+          <h2>MovieSearch</h2>
+          <p>A react web application where you can search on a movietitle and press the search symbol</p>
+        </Link>
+        <Link
+          href="https://www.heyey.se"
           className={styles.card}
           target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          rel="noopener noreferrer">
+          <h2>Heyey</h2>
+          <p>An application built in Next.js during an internship @Elevateyourself AB 20weeks</p>
+        </Link>
+        <Link
+          href="https://www.elevateyourself.se/sv"
           className={styles.card}
           target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div> */}
-      <Footer />
+          rel="noopener noreferrer">
+          <h2>Elevateyourself</h2>
+          <p>An application built in Next.js during an internship @Elevateyourself AB 20weeks</p>
+        </Link>
+      </div>
     </main>
   )
 }
