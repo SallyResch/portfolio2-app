@@ -26,9 +26,15 @@ export default function Home() {
             To relax I play dungeons and dragons with friends, workout and experiment with food
             <div className={styles.contactLinks}>
               <h3>Contact:</h3>
-              <Link href="mailto:sallyresch27@gmail.com">Email</Link>
               <Link
-                href="https://www.linkedin.com/in/sally-resch/">LinkedIn</Link>
+                href="mailto:sallyresch27@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer">Email</Link>
+              <Link
+                href="https://www.linkedin.com/in/sally-resch/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >LinkedIn</Link>
             </div>
           </p>
           <div className={styles.card}>
