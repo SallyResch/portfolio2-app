@@ -9,8 +9,12 @@ export default function Home() {
         <h1>
           Welcome
         </h1>
-        <div className={styles.center}>
-        </div>
+        <Image
+
+        />
+      </div>
+      <div className={styles.center}>
+        Hello this is the center div
       </div>
       <div className={styles.grid}>
         <Link
