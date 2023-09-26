@@ -15,12 +15,24 @@ export default function Home() {
           width={150}
           height={150}
         />
-        <p>My name is Sally Resch and I live in Södertälje, Sweden. As for alot of other people, the pandemic brought new horizons  and I found programming.
-          Since the autumn of 2021, I studied to become a Java Developer/Fullstack at Stockholms Technical Institute and have now reached my goal of graduation.
-          I seek employment as a developer as we speak.
-          I have previously worked both as a manager in a kitchen and in food production but also as a chef and baker. These experiences has given me the opportunity to develop my problem solving skills and also made me aware of the importance of teamwork.
-          As a person, I am a curious, observant, quality-driven teamplayer who is passionate about clear communication within the working group. I am attracted to innovation and I am confident of driving it forward together.
-          To relax I play dungeons and dragons with friends, workout and experiment with food</p>
+        <div className={styles.grid2}>
+          <p>My name is Sally Resch and I live in Södertälje, Sweden. As for alot of other people, the pandemic brought new horizons  and I found programming.
+            Since the autumn of 2021, I studied to become a Java Developer/Fullstack at Stockholms Technical Institute and have now reached my goal of graduation.
+            I seek employment as a developer as we speak.
+            I have previously worked both as a manager in a kitchen and in food production but also as a chef and baker. These experiences has given me the opportunity to develop my problem solving skills and also made me aware of the importance of teamwork.
+            As a person, I am a curious, observant, quality-driven teamplayer who is passionate about clear communication within the working group. I am attracted to innovation and I am confident of driving it forward together.
+            To relax I play dungeons and dragons with friends, workout and experiment with food</p>
+          <div className={styles.card}>
+            <h2>Qualifications</h2>
+            <div className={`${styles.graphs} ${styles.first}`} ><h3>Java Backend</h3></div>
+            <div className={`${styles.graphs} ${styles.second}`} ><h3>Next.js</h3></div>
+            <div className={`${styles.graphs} ${styles.third}`} ><h3>JavaScript</h3></div>
+            <div className={`${styles.graphs} ${styles.fourth}`} ><h3>TypeScript</h3></div>
+            <div className={`${styles.graphs} ${styles.fifth}`} ><h3>Agile</h3></div>
+            <div className={`${styles.graphs} ${styles.sixth}`} ><h3>CSS</h3></div>
+          </div>
+        </div>
+
       </div>
       <div className={styles.center}>
         Hello this is the center div
