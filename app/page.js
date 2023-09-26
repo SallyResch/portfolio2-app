@@ -10,7 +10,9 @@ export default function Home() {
           Welcome
         </h1>
         <Image
-
+          src="/profilePicture.jpg"
+          width={150}
+          height={150}
         />
       </div>
       <div className={styles.center}>
