@@ -9,12 +9,31 @@ export default function Home() {
         <h1>
           Welcome
         </h1>
-        <Image
-          className={styles.profilePicture1}
-          src="/profilePicture.jpg"
-          width={150}
-          height={150}
-        />
+        <div className={styles.profilePicAndContact}>
+          <Image
+            className={styles.profilePicture1}
+            src="/profilePicture.jpg"
+            width={150}
+            height={150}
+          />
+          <div className={styles.contactLinks}>
+            <h3>Contact:</h3>
+            <Link
+              href="mailto:sallyresch27@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer">Email</Link>
+            <Link
+              href="https://www.linkedin.com/in/sally-resch/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >LinkedIn</Link>
+            <Link
+              href="https://github.com/SallyResch"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Github</Link>
+          </div>
+        </div>
         <div className={styles.grid2}>
           <p>My name is Sally Resch and I live in Södertälje, Sweden. As for alot of other people, the pandemic brought new horizons  and I found programming.
             Since the autumn of 2021, I studied to become a Java Developer/Fullstack at Stockholms Technical Institute and have now reached my goal of graduation.
@@ -22,23 +41,6 @@ export default function Home() {
             I have previously worked both as a manager in a kitchen and in food production but also as a chef and baker. These experiences has given me the opportunity to develop my problem solving skills and also made me aware of the importance of teamwork.
             As a person, I am a curious, observant, quality-driven teamplayer who is passionate about clear communication within the working group. I am attracted to innovation and I am confident of driving it forward together.
             To relax I play dungeons and dragons with friends, workout and experiment with food
-            <div className={styles.contactLinks}>
-              <h3>Contact:</h3>
-              <Link
-                href="mailto:sallyresch27@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer">Email</Link>
-              <Link
-                href="https://www.linkedin.com/in/sally-resch/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >LinkedIn</Link>
-              <Link
-                href="https://github.com/SallyResch"
-                target="_blank"
-                rel="noopener noreferrer"
-              >Github</Link>
-            </div>
           </p>
           <div className={styles.card2}>
             <h2>Qualifications</h2>
