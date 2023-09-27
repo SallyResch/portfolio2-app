@@ -49,7 +49,7 @@ export default function Home() {
             <div className={`${styles.graphs} ${styles.third}`} ><h3>JavaScript</h3></div>
             <div className={`${styles.graphs} ${styles.fourth}`} ><h3>TypeScript</h3></div>
             <div className={`${styles.graphs} ${styles.fifth}`} ><h3>Agile</h3></div>
-            <div className={`${styles.graphs} ${styles.sixth}`} ><h3>CSS</h3></div>
+            <div className={`${styles.graphs} ${styles.sixth}`} ><h3>HTML & CSS</h3></div>
           </div>
         </div>
       </div>
