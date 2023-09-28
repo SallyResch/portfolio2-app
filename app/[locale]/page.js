@@ -9,11 +9,11 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div>
-        <Link href="/" locale="en">English</Link>
+        <Link href="/" locale="en">{t("english")}</Link>
         {" "}
         |
         {" "}
-        <Link href="/" locale="sv">Swedish</Link>
+        <Link href="/" locale="sv">{t("swedish")}</Link>
       </div>
 
       <div className={styles.description}>
@@ -29,7 +29,7 @@ export default function Home() {
             height={150}
           />
           <div className={styles.contactLinks}>
-            <h3>Contact:</h3>
+            <h3>{t("contact")}</h3>
             <Link
               href="mailto:sallyresch27@gmail.com"
               target="_blank"
@@ -51,7 +51,7 @@ export default function Home() {
           </p>
 
           <div className={styles.card2}>
-            <h2>Qualifications</h2>
+            <h2>{t("qualifications")}</h2>
             <div className={`${styles.graphs} ${styles.first}`} ><h3>Java Backend</h3></div>
             <div className={`${styles.graphs} ${styles.second}`} ><h3>Next.js</h3></div>
             <div className={`${styles.graphs} ${styles.third}`} ><h3>JavaScript</h3></div>
