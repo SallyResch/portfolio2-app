@@ -19,7 +19,6 @@ export default function RootLayout({ children, params }) {
   }
   return (
     <html lang={locale}>
-
       <body className={inter.className}>
         <Navbar />
         {children}

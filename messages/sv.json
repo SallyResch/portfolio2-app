@@ -1,5 +1,6 @@
 {
-  "Index": {
-    "title": "Välkommen"
+  "Home": {
+    "title": "Välkommen",
+    "bodyText":"Mitt namn är Sally Resch och jag bor i Södertälje, Sverige. Precis som för många andra människor öppnade pandemin upp nya möjligheter för mig, och jag fann programmering. Sedan hösten 2021 har jag studerat för att bli en Java-utvecklare/fullstack på Stockholms Tekniska Institut och har nu nått mitt mål att ta examen. Jag söker för närvarande anställning som utvecklare. Jag har tidigare arbetat både som chef i ett kök och inom livsmedelsproduktion, men också som kock och bagare. Dessa erfarenheter har gett mig möjlighet att utveckla min problemlösningsförmåga och även gjort mig medveten om vikten av teamwork. Som person är jag nyfiken, observant, kvalitetsmedveten och en lagspelare som värdesätter tydlig kommunikation inom arbetsgruppen. Jag är attraherad av innovation och är övertygad om att driva det framåt tillsammans.För avkoppling spelar jag dungeons and dragons med vänner, tränar och experimenterar med mat."
   }
 }
