@@ -1,9 +1,24 @@
+.main {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  overflow: hidden;
+	background-color: orange;
+}
+.main h2{
+	color: white;
+}
+
 .center{
 	display: flex;
-  justify-content: center;
-  align-items: center;
-	background-color: orange;
-	color: white;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+}
+
+.easteregg{
+	color: orange;
+}
+.easteregg:hover{
+	color: white;
+	cursor: pointer;
 }
