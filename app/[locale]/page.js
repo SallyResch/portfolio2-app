@@ -2,7 +2,8 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import { useTranslations } from 'next-intl';
 import { Link } from 'next-intl';
-
+import Button from '@mui/material/Button'
+import { TextField } from '@mui/material/TextField';
 export default function Home() {
   const t = useTranslations('Home');
 
@@ -61,11 +62,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.center}>
-        <div className={styles.warningTape}>
-          <h2>UNDER CONSTRUCTION</h2>
-        </div>
-      </div>
+
       <div className={styles.grid}>
         <Link
           href="https://reactproject-2noafu1o5-annaaste.vercel.app/"
@@ -99,6 +96,27 @@ export default function Home() {
           <h2>Elevateyourself</h2>
           <p>An application built in Next.js during an internship @Elevateyourself AB 20weeks</p>
         </Link>
+      </div>
+      <div className={styles.center}>
+      <form className={styles.formSection}>
+        <input
+          className="nameInput"
+          placeholder="Name"
+          type="text"
+        />
+        <input
+          className="emailInput"
+          placeholder="Email"
+          type="email"
+        />
+        <textarea className="textBox" placeholder="Message" />
+        <input
+          className={styles.sendButton}
+          type="submit"
+          variant="contained" 
+          size="medium"
+          aria-label='Send'/>
+      </form>
       </div>
     </main>
   )
