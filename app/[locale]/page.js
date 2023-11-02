@@ -97,25 +97,31 @@ export default function Home() {
         </Link>
       </div>
       <div className={styles.center}>
-        <h1>Contact</h1>
+        <h1>{t("contact")}</h1>
       <form className={styles.formSection}>
         <input
           className={styles.inputField}
           placeholder="Name"
           type="text"
+          required
         />
         <input
           className={styles.inputField}
-          placeholder="Email"
+          placeholder="Email@mail.com"
           type="email"
+          required
         />
-        <textarea className={styles.inputFieldMsg} placeholder="Message" />
+        <textarea 
+        className={styles.inputFieldMsg} 
+        placeholder="Message"
+        required
+        />
         <input
           className={styles.sendButton}
           type="submit"
-          variant="contained" 
+          variant="contained"
           size="medium"
-          aria-label='Send'/>
+        />
       </form>
       </div>
     </main>

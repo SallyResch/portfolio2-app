@@ -94,25 +94,51 @@
   max-width: 30ch;
 }
 
+
+/*contact form that is centered*/
 .center {
   display: flex;
   flex-direction: column;
+  padding: 2em;
+  background-color: rgb(252, 221, 163);
+  border-radius: var(--border-radius);
+  border: 2px solid orange;
+  margin: 2em;
 }
-
 .formSection{
   display: flex;
   flex-direction: column;
+  align-items: center;
   max-width: 100%;
+  justify-content: space-between;
+  padding: 0.5em;
 }
 .inputField{
   height: 35px;
   width: 300px;
+  border-color: orange;
+  border: 1px solid orange;
+  border-radius: var(--border-radius);
+  padding: 0.5em;
+  margin-bottom: 1em;
 }
 .inputFieldMsg{
-  height: 300px;
+  height: 200px;
   width: 300px;
+  border-radius: var(--border-radius);
+  padding: 0.5em;
+  border: 1px solid orange;
+  margin-bottom: 2em;
 }
-
+.sendButton{
+  background-color: orange;
+  border-color: 2px solid rgb(129, 84, 0);
+  width: 150px;
+  justify-content: center;
+  display: flex;
+  border-radius: var(--border-radius);
+  height: 35px;
+}
 
 .logo {
   position: relative;
