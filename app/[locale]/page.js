@@ -2,11 +2,10 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import { useTranslations } from 'next-intl';
 import { Link } from 'next-intl';
-import Button from '@mui/material/Button'
-import { TextField } from '@mui/material/TextField';
+
+
 export default function Home() {
   const t = useTranslations('Home');
-
   return (
     <main className={styles.main}>
       <div>
@@ -98,18 +97,19 @@ export default function Home() {
         </Link>
       </div>
       <div className={styles.center}>
+        <h1>Contact</h1>
       <form className={styles.formSection}>
         <input
-          className="nameInput"
+          className={styles.inputField}
           placeholder="Name"
           type="text"
         />
         <input
-          className="emailInput"
+          className={styles.inputField}
           placeholder="Email"
           type="email"
         />
-        <textarea className="textBox" placeholder="Message" />
+        <textarea className={styles.inputFieldMsg} placeholder="Message" />
         <input
           className={styles.sendButton}
           type="submit"

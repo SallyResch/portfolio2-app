@@ -96,15 +96,28 @@
 
 .center {
   display: flex;
+  flex-direction: column;
 }
+
 .formSection{
   display: flex;
   flex-direction: column;
   max-width: 100%;
 }
+.inputField{
+  height: 35px;
+  width: 300px;
+}
+.inputFieldMsg{
+  height: 300px;
+  width: 300px;
+}
+
+
 .logo {
   position: relative;
 }
+
 .graphs{
   height: 25px;
   min-width: 200px;
