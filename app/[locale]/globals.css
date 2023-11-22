@@ -71,3 +71,9 @@ a {
     color-scheme: dark;
   }
 }
+
+@media(max-width: 600px){
+  h1{
+    font-size: xx-large;
+  }
+}
