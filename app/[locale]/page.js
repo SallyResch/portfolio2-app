@@ -8,18 +8,20 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
+
       <div>
+        <p>Language</p>
         <Link href="/" locale="en">{t("english")}</Link>
         {" "}
         |
         {" "}
         <Link href="/" locale="sv">{t("swedish")}</Link>
       </div>
-
+      <h1>
+        {t('title')}
+      </h1>
       <div className={styles.description}>
-        <h1>
-          {t('title')}
-        </h1>
+
 
         <div className={styles.profilePicAndContact}>
           <Image
@@ -28,6 +30,20 @@ export default function Home() {
             width={150}
             height={150}
           />
+          <p>{t('bodyText')}
+          </p>
+          <div className={styles.card2}>
+            <h2>{t("qualifications")}</h2>
+            <div className={`${styles.graphs} ${styles.first}`} ><h3>Java Backend</h3></div>
+            <div className={`${styles.graphs} ${styles.second}`} ><h3>Next.js</h3></div>
+            <div className={`${styles.graphs} ${styles.third}`} ><h3>JavaScript</h3></div>
+            <div className={`${styles.graphs} ${styles.fourth}`} ><h3>TypeScript</h3></div>
+            <div className={`${styles.graphs} ${styles.fifth}`} ><h3>Agile</h3></div>
+            <div className={`${styles.graphs} ${styles.sixth}`} ><h3>HTML & CSS</h3></div>
+          </div>
+        </div>
+        <div className={styles.grid2}>
+
           <div className={styles.contactLinks}>
             <h3>{t("contact")}</h3>
             <Link
@@ -45,27 +61,11 @@ export default function Home() {
               rel="noopener noreferrer"
             >Github</Link>
           </div>
-        </div>
-        <div className={styles.grid2}>
-          <p>{t('bodyText')}
-          </p>
 
-          <div className={styles.card2}>
-            <h2>{t("qualifications")}</h2>
-            <div className={`${styles.graphs} ${styles.first}`} ><h3>Java Backend</h3></div>
-            <div className={`${styles.graphs} ${styles.second}`} ><h3>Next.js</h3></div>
-            <div className={`${styles.graphs} ${styles.third}`} ><h3>JavaScript</h3></div>
-            <div className={`${styles.graphs} ${styles.fourth}`} ><h3>TypeScript</h3></div>
-            <div className={`${styles.graphs} ${styles.fifth}`} ><h3>Agile</h3></div>
-            <div className={`${styles.graphs} ${styles.sixth}`} ><h3>HTML & CSS</h3></div>
-          </div>
         </div>
       </div>
-      <div className={styles.center}>
-        <div className={styles.warningTape}>
-          <h2>UNDER CONSTRUCTION</h2>
-        </div>
-      </div>
+      {/*       <div className={styles.center}>
+      </div> */}
       <div className={styles.grid}>
         <Link
           href="https://reactproject-2noafu1o5-annaaste.vercel.app/"
