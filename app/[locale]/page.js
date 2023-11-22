@@ -8,21 +8,20 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-
-      <div>
-        <p>Language</p>
-        <Link href="/" locale="en">{t("english")}</Link>
-        {" "}
-        |
-        {" "}
-        <Link href="/" locale="sv">{t("swedish")}</Link>
-      </div>
       <h1>
         {t('title')}
       </h1>
+      <div className={styles.languageCenter}>
+        <p className={styles.pTagSmall}>Language</p>
+        <div>
+          <Link href="/" locale="en" className={styles.pTagSmall}>{t("english")}</Link>
+          {" "}
+          |
+          {" "}
+          <Link href="/" locale="sv" className={styles.pTagSmall}> {t("swedish")}</Link>
+        </div>
+      </div>
       <div className={styles.description}>
-
-
         <div className={styles.profilePicAndContact}>
           <Image
             className={styles.profilePicture1}
@@ -30,7 +29,7 @@ export default function Home() {
             width={150}
             height={150}
           />
-          <p>{t('bodyText')}
+          <p className={styles.pTag}>{t('bodyText')}
           </p>
           <div className={styles.card2}>
             <h2>{t("qualifications")}</h2>
