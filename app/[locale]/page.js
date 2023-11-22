@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div>
+        <p>Select language</p>
         <Link href="/" locale="en">{t("english")}</Link>
         {" "}
         |
