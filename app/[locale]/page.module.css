@@ -1,7 +1,6 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   overflow: hidden;
   min-height: 100vh;
@@ -65,7 +64,6 @@
   border-radius: var(--border-radius);
   border: 1px solid orange;
   margin-bottom: 1rem;
-  max-width: 400px;
 }
 
 .card {

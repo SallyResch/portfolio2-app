@@ -11,6 +11,12 @@ export default function Home() {
       <h1>
         {t('title')}
       </h1>
+      <Image
+        className={styles.profilePicture1}
+        src="/profilePicture.jpg"
+        width={150}
+        height={150}
+      />
       <div className={styles.languageCenter}>
         <p className={styles.pTagSmall}>Language</p>
         <div>
@@ -23,14 +29,7 @@ export default function Home() {
       </div>
       <div className={styles.description}>
         <div className={styles.profilePicAndContact}>
-          <Image
-            className={styles.profilePicture1}
-            src="/profilePicture.jpg"
-            width={150}
-            height={150}
-          />
-          <p className={styles.pTag}>{t('bodyText')}
-          </p>
+          <p className={styles.pTag}>{t('bodyText')}</p>
           <div className={styles.card2}>
             <h2>{t("qualifications")}</h2>
             <div className={`${styles.graphs} ${styles.first}`} ><h3>Java Backend</h3></div>
@@ -65,40 +64,7 @@ export default function Home() {
       </div>
       {/*       <div className={styles.center}>
       </div> */}
-      <div className={styles.grid}>
-        <Link
-          href="https://reactproject-2noafu1o5-annaaste.vercel.app/"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer">
-          <h2>Ingrii webapplication</h2>
-          <p>A next.js web application that finds replacement ingredients for you</p>
-        </Link>
-        <Link
-          href="https://reactmastery2-4w1154sqf-sallyresch27-gmailcom.vercel.app/"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer">
-          <h2>MovieSearch</h2>
-          <p>A react web application where you can search on a movietitle and press the search symbol</p>
-        </Link>
-        <Link
-          href="https://www.heyey.se"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer">
-          <h2>Heyey</h2>
-          <p>An application built in Next.js during an internship @Elevateyourself AB 20weeks</p>
-        </Link>
-        <Link
-          href="https://www.elevateyourself.se/sv"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer">
-          <h2>Elevateyourself</h2>
-          <p>An application built in Next.js during an internship @Elevateyourself AB 20weeks</p>
-        </Link>
-      </div>
+
     </main>
   )
 }
