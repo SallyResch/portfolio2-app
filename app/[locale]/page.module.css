@@ -18,21 +18,32 @@
   align-items: center;
   gap: 0.5rem;
 }
-.titleHomePage{
-  display: flex;
-  justify-content: center;
-}
-.language{
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  justify-content: center;
-  }
 .description p {
   margin: 0;
   padding: 1rem;
 }
 
+.language{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  border: 3px solid black;
+  margin-left: 80%;
+  padding: .5em 0 .5em 0;
+  }
+.titleHomePage{
+  display: flex;
+  justify-content: center;
+  padding: 4em 0 4em 0;
+}
+.orangeSection{
+  height: 15em;
+  background-color: rgb(255, 212, 131);
+  border: 5px solid orange;
+  border-radius: var(--border-radius);
+}
 .code {
   font-weight: 700;
   font-family: var(--font-mono);

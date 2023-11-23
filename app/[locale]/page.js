@@ -20,7 +20,9 @@ export default function Home() {
       <h1 className={styles.titleHomePage}>
         {t('title')}
       </h1>
+      <section className={styles.orangeSection}>
 
+      </section>
 
       <div className={styles.description}>
 
