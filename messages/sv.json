@@ -4,11 +4,12 @@
     "bodyText":"Jag är en nyfiken, observant, kvalitetsdriven teamplayer som har utmärkt kommunikationsförmåga och lätt att lära mig nya tekniska saker.",
     "contact":"Kontakt",
     "qualifications": "Kvalifikationer",
-    "about":"About",
+    "about":"Historia",
     "projects":"Projekt",
     "aboutMe": "Om mig",
     "swedish": "Svenska",
     "english": "Engelska",
-    "language": "Språk"
+    "language": "Språk",
+    "skills": "Skills"
   }
 }
