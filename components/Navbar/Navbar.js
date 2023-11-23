@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import styles from "./Navbar.module.css";
 import { GiChest, GiOpenTreasureChest } from 'react-icons/gi';
-import Link from 'next/link';
+import { Link } from 'next-intl';
 import { useTranslations } from 'next-intl';
 
 export default function Navbar() {
@@ -18,6 +18,16 @@ export default function Navbar() {
       <h2 className={styles.center}><Link href="/">Sally Resch</Link></h2>
       <div className={styles.easteregg} onClick={handleChestClick}>
         {isChestOpen ? <GiOpenTreasureChest size={40} /> : <GiChest size={40} />}
+      </div>
+      <div className={styles.language}>
+        <p className={styles.pTagSmall}>{t("language")}</p>
+        <div>
+          <Link href="/" locale="en" className={styles.pTagSmall}>{t("english")}</Link>
+          {" "}
+          |
+          {" "}
+          <Link href="/" locale="sv" className={styles.pTagSmall}> {t("swedish")}</Link>
+        </div>
       </div>
       <div className={`${styles.webPageLinks} ${styles.center}`}>
         <Link href="/about" className={styles.wpl}>{t("about")}</Link>

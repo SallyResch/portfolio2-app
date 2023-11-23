@@ -7,16 +7,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <div className={styles.language}>
-        <p className={styles.pTagSmall}>{t("language")}</p>
-        <div>
-          <Link href="/" locale="en" className={styles.pTagSmall}>{t("english")}</Link>
-          {" "}
-          |
-          {" "}
-          <Link href="/" locale="sv" className={styles.pTagSmall}> {t("swedish")}</Link>
-        </div>
-      </div>
+
       <h1 className={styles.titleHomePage}>
         {t('title')}
       </h1>
