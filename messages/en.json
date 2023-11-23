@@ -1,10 +1,14 @@
 {
   "Home": {
-    "title": "Welcome",
+    "title": "Welcome to my portfolio",
     "bodyText": "I am a curious, observant, quality-driven team player with excellent communication skills and an ease in learning new technical things.",
-    "contact":"Contact:",
+    "contact":"Contact",
     "qualifications": "Qualifications",
+    "about":"About",
+    "projects":"Projects",
+    "aboutMe": "About me",
     "swedish": "Swedish",
-    "english": "English"
+    "english": "English",
+    "language": "Language"
   }
 }

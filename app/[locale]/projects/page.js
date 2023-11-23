@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 
 export default function Projects() {
 	return (
-		<main>
+		<main className={styles.main}>
 			<div className={styles.grid}>
 				<Link
 					href="https://reactproject-2noafu1o5-annaaste.vercel.app/"
