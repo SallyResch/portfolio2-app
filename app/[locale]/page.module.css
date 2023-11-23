@@ -18,7 +18,16 @@
   align-items: center;
   gap: 0.5rem;
 }
-
+.titleHomePage{
+  display: flex;
+  justify-content: center;
+}
+.language{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  }
 .description p {
   margin: 0;
   padding: 1rem;
@@ -281,12 +290,6 @@ border-radius: 50px;
 }
 
 @media(min-width: 1121px){
-  .language{
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  justify-content: center;
-  }
   .pTagSmall{
     font-size: 20px;
   }

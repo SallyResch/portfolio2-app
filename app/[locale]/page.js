@@ -17,7 +17,7 @@ export default function Home() {
           <Link href="/" locale="sv" className={styles.pTagSmall}> {t("swedish")}</Link>
         </div>
       </div>
-      <h1>
+      <h1 className={styles.titleHomePage}>
         {t('title')}
       </h1>
 
