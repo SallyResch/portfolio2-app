@@ -1,10 +1,14 @@
 {
   "Home": {
-    "title": "Välkommen",
+    "title": "Välkommen till min portfolio",
     "bodyText":"Jag är en nyfiken, observant, kvalitetsdriven teamplayer som har utmärkt kommunikationsförmåga och lätt att lära mig nya tekniska saker.",
-    "contact":"Kontakt:",
+    "contact":"Kontakt",
     "qualifications": "Kvalifikationer",
+    "about":"About",
+    "projects":"Projekt",
+    "aboutMe": "Om mig",
     "swedish": "Svenska",
-    "english": "Engelska"
+    "english": "Engelska",
+    "language": "Språk"
   }
 }
