@@ -43,6 +43,9 @@
   background-color: rgb(255, 212, 131);
   border: 5px solid orange;
   border-radius: var(--border-radius);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .code {
   font-weight: 700;
