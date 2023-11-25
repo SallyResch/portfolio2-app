@@ -4,6 +4,7 @@ import styles from "./Navbar.module.css";
 import { GiChest, GiOpenTreasureChest } from 'react-icons/gi';
 import { Link } from 'next-intl';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 export default function Navbar() {
   const t = useTranslations('Home');
@@ -11,6 +12,12 @@ export default function Navbar() {
 
   const handleChestClick = () => {
     setIsChestOpen(!isChestOpen);
+  };
+
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -29,14 +36,29 @@ export default function Navbar() {
           <Link href="/" locale="sv" className={styles.pTagSmall}> {t("swedish")}</Link>
         </div>
       </div>
+      <div>
 
-      {/* <div className={`${styles.webPageLinks} ${styles.center}`}>
-        <Link href="/about" className={styles.wpl}>{t("about")}</Link>
-        <Link href="/skills" className={styles.wpl}>{t("skills")}</Link>
-        <Link href="/projects" className={styles.wpl}>{t("projects")}</Link>
-        <Link href="/contact" className={styles.wpl}>{t("contact")}</Link>
-      </div> */}
-    </div>
+        <div className={`${styles.webPageLinks} ${isMenuOpen ? styles.showMenu : ''}`}>
+          <Image src="/hambMenu.png" width={40} height={40} onClick={toggleMenu} />
+        </div>
+        {isMenuOpen && (
+          <div className={`${styles.webPageLinks} `}>
+            <Link href="/about" className={styles.wpl} onClick={toggleMenu}>
+              {t("about")}
+            </Link>
+            <Link href="/skills" className={styles.wpl} onClick={toggleMenu}>
+              {t("skills")}
+            </Link>
+            <Link href="/projects" className={styles.wpl} onClick={toggleMenu}>
+              {t("projects")}
+            </Link>
+            <Link href="/contact" className={styles.wpl} onClick={toggleMenu}>
+              {t("contact")}
+            </Link>
+          </div>
+        )}
+      </div>
+    </div >
   );
 }
 

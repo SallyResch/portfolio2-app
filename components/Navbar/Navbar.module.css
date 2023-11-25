@@ -42,4 +42,9 @@ padding-right: 2em;
 		color: white;
 		font-size: 20px;
 	}
+	.webPageLinks{
+		display: flex;
+		flex-direction: column;
+		z-index: 1;
+	}
 }
