@@ -273,6 +273,10 @@ border-radius: 50px;
     transform: none;
     height: 300px;
   }
+  .orangeSection{
+    height: 50em;
+    flex-direction: column;
+  }
 
   
 }

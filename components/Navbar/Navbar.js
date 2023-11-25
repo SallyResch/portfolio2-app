@@ -21,7 +21,7 @@ export default function Navbar() {
       </div>
       <div className={styles.language}>
         <p className={styles.pTagSmall}>{t("language")}</p>
-        <div>
+        <div className={styles.languageChoise}>
           <Link href="/" locale="en" className={styles.pTagSmall}>{t("english")}</Link>
           {" "}
           |
@@ -29,12 +29,13 @@ export default function Navbar() {
           <Link href="/" locale="sv" className={styles.pTagSmall}> {t("swedish")}</Link>
         </div>
       </div>
-      <div className={`${styles.webPageLinks} ${styles.center}`}>
+
+      {/* <div className={`${styles.webPageLinks} ${styles.center}`}>
         <Link href="/about" className={styles.wpl}>{t("about")}</Link>
         <Link href="/skills" className={styles.wpl}>{t("skills")}</Link>
         <Link href="/projects" className={styles.wpl}>{t("projects")}</Link>
         <Link href="/contact" className={styles.wpl}>{t("contact")}</Link>
-      </div>
+      </div> */}
     </div>
   );
 }
