@@ -13,6 +13,7 @@
 	color: white;
 	font-size: 25px;
 }
+
 .wpl{
 padding-right: 2em;
 }
@@ -36,7 +37,7 @@ padding-right: 2em;
 		display: flex;
 	}
 	.wpl{
-		font-size: 15px;
+		font-size: 20px;
 	}
 	.main h2{
 		color: white;
@@ -45,6 +46,5 @@ padding-right: 2em;
 	.webPageLinks{
 		display: flex;
 		flex-direction: column;
-		z-index: 1;
 	}
 }

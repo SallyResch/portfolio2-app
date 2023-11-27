@@ -12,6 +12,7 @@
     "next": "latest",
     "next-intl": "^3.0.0-beta.19",
     "react": "latest",
+    "react-burger-menu": "^3.0.9",
     "react-dom": "latest",
     "react-icons": "^4.11.0"
   }
