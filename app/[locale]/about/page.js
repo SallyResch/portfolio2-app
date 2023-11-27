@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 export default function About() {
 	const t = useTranslations('Home');
 	return (
-		<div className={styles.main}>
+		<div className={styles.aboutMain}>
 			<h1>{t("aboutMe")}</h1>
 			<Image
 				className={styles.profilePicture1}

@@ -1,7 +1,7 @@
 .main {
   display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
   overflow: hidden;
 	background-color: orange;
 }
@@ -17,7 +17,7 @@
 padding-right: 2em;
 }
 .center{
-	padding: 2rem;
+	padding: 20px;
 }
 .easteregg{
 	color: orange;
@@ -26,4 +26,25 @@ padding-right: 2em;
 .easteregg:hover{
 	color: white;
 	cursor: pointer;
+}
+@media(max-width: 700px){
+	.language{
+		justify-content: center;
+		align-items: center;
+	}
+	.languageChoise{
+		display: flex;
+	}
+	.wpl{
+		font-size: 15px;
+	}
+	.main h2{
+		color: white;
+		font-size: 20px;
+	}
+	.webPageLinks{
+		display: flex;
+		flex-direction: column;
+		z-index: 1;
+	}
 }
