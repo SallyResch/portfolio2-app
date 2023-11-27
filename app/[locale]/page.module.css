@@ -12,7 +12,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+}
+.projectsMain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2em;
 }
 .description {
   display: inherit;
@@ -69,8 +74,8 @@
 .contactLinks{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 1rem;
+  align-items:center;
+  padding: 2rem;
 }
 .contactLinks:hover{
   cursor: pointer;
@@ -92,6 +97,7 @@
   grid-template-columns: repeat(4, minmax(25%, auto));
   max-width: 100%;
   width: var(--max-width);
+  padding-top: 1em;
 }
 
 .card2{
