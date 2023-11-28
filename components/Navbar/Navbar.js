@@ -20,6 +20,9 @@ export default function Navbar() {
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
+  function closeMenu() {
+    setMenuOpen(false);
+  }
   var style = {
     bmBurgerButton: {
       position: "relative",
@@ -76,9 +79,10 @@ export default function Navbar() {
         </div>
       </div>
       <Menu
+        className={styles.dropDownMenu}
         isOpen={isMenuOpen}
         right
-        width={"250px"}
+        width={"270px"}
         styles={style}
         onStateChange={(state) => setMenuOpen(state.isMenuOpen)}
         customBurgerIcon={<Image src="/hambMenu.png" width={40} height={40} />}
@@ -95,6 +99,7 @@ export default function Navbar() {
         <Link href="/contact" className={styles.wpl} onClick={toggleMenu}>
           {t("contact")}
         </Link>
+        <div className={styles.closeMenu} onClick={closeMenu}></div>
       </Menu>
     </div >
   );

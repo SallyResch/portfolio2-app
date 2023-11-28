@@ -7,7 +7,7 @@ export default function About() {
 	return (
 		<main className={styles.main}>
 			<div className={styles.aboutMain}>
-				<h1>{t("aboutMe")}</h1>
+				<h1 className={styles.aboutMainText}>{t("aboutMe")}</h1>
 				<Image
 					className={styles.profilePicture1}
 					src="/profilePicture.jpg"
