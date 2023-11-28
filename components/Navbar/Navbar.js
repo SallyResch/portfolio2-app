@@ -20,6 +20,9 @@ export default function Navbar() {
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
+  function closeMenu() {
+    setMenuOpen(false);
+  }
   var style = {
     bmBurgerButton: {
       position: "relative",
@@ -60,6 +63,7 @@ export default function Navbar() {
   };
   return (
     <div className={styles.main}>
+      {isMenuOpen && <div className={styles.overlay}></div>}
       <h2 className={styles.center}><Link href="/">Sally Resch</Link></h2>
       <div className={styles.easteregg} onClick={handleChestClick}>
         {isChestOpen ? <GiOpenTreasureChest size={40} /> : <GiChest size={40} />}
@@ -95,6 +99,7 @@ export default function Navbar() {
         <Link href="/contact" className={styles.wpl} onClick={toggleMenu}>
           {t("contact")}
         </Link>
+        <div className={styles.closeMenu} onClick={closeMenu}></div>
       </Menu>
     </div >
   );
