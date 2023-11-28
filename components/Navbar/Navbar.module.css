@@ -14,9 +14,8 @@
 	font-size: 25px;
 }
 .wpl{
-padding-right: 2em;
+padding: 1.5em;
 color: black;
-padding-bottom: 2em;
 text-decoration: underline;
 }
 .center{
@@ -40,7 +39,7 @@ text-decoration: underline;
 	}
 	.wpl{
 		font-size: 20px;
-		padding: 0.7em;
+		padding: 1em;
 		color: black;
 		text-decoration: underline;
 	}

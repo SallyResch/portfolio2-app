@@ -79,7 +79,7 @@ export default function Navbar() {
         className={styles.dropDownMenu}
         isOpen={isMenuOpen}
         right
-        width={"250px"}
+        width={"270px"}
         styles={style}
         onStateChange={(state) => setMenuOpen(state.isMenuOpen)}
         customBurgerIcon={<Image src="/hambMenu.png" width={40} height={40} />}
