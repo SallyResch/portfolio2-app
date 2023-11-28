@@ -13,9 +13,11 @@
 	color: white;
 	font-size: 25px;
 }
-
 .wpl{
 padding-right: 2em;
+color: black;
+padding-bottom: 2em;
+text-decoration: underline;
 }
 .center{
 	padding: 20px;
@@ -28,7 +30,7 @@ padding-right: 2em;
 	color: white;
 	cursor: pointer;
 }
-@media(max-width: 700px){
+@media(min-width: 601px){
 	.language{
 		justify-content: center;
 		align-items: center;
@@ -38,6 +40,9 @@ padding-right: 2em;
 	}
 	.wpl{
 		font-size: 20px;
+		padding: 0.7em;
+		color: black;
+		text-decoration: underline;
 	}
 	.main h2{
 		color: white;

@@ -76,6 +76,7 @@ export default function Navbar() {
         </div>
       </div>
       <Menu
+        className={styles.dropDownMenu}
         isOpen={isMenuOpen}
         right
         width={"250px"}
