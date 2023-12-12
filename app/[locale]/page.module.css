@@ -2,6 +2,9 @@
   overflow: hidden;
   min-height: 100vh;
 }
+.chemCss{
+  background-color: rgb(255, 230, 161);
+}
 .aboutMain{
   display: flex;
   align-items: center;
