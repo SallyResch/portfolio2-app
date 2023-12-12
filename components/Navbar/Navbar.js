@@ -96,6 +96,9 @@ export default function Navbar() {
         <Link href="/projects" className={styles.wpl} onClick={toggleMenu}>
           {t("projects")}
         </Link>
+        <Link href="/chemistry" className={styles.wpl} onClick={toggleMenu}>
+          {t("chemistry")}
+        </Link>
         <Link href="/contact" className={styles.wpl} onClick={toggleMenu}>
           {t("contact")}
         </Link>
