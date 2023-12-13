@@ -44,7 +44,7 @@ export default function Navbar() {
       background: "#ffffff",
       padding: "2.5em 1.5em 0",
       fontSize: "1.15em",
-      border: "2px solid #F6A022",
+      border: "3px solid #F6A022",
       borderRadius: "9px 0 0 9px",
     },
     bmMorphShape: {
@@ -56,9 +56,6 @@ export default function Navbar() {
     },
     bmItem: {
       display: "inline-block",
-    },
-    bmOverlay: {
-      background: "rgba(0, 0, 0, 0)",
     },
   };
   return (
