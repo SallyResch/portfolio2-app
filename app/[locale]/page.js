@@ -15,7 +15,7 @@ export default function Home() {
         <Image src="/java-logo.gif" width={250} height={130} />
         <Image src="/next.svg" width={200} height={130} />
         <Image src="/React-icon.svg.png" width={150} height={110} />
-        <Image src="/database.png" width={150} height={110} />
+        <Image src="/cLanguage2.png" width={120} height={100} />
       </section>
     </main>
   )
